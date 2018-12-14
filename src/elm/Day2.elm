@@ -1,4 +1,4 @@
-module Day2 exposing (answer, go, hasMultiples, hash, question)
+module Day2 exposing (answer, hasMultiples, hash, part1, question)
 
 
 type alias HasDoubles =
@@ -312,5 +312,5 @@ question =
         icxjvbroqtubaeyzpdmfksaugw"""
 
 
-go =
+part1 =
     answer question
