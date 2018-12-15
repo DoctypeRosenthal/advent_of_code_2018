@@ -17,6 +17,16 @@ testSet =
     ]
 
 
+testStr =
+    """abcde
+      fghij
+      klmno
+      pqrst
+      fguij
+      axcye
+      wvxyz"""
+
+
 suite : Test
 suite =
     describe "Hashes of box ids"
@@ -32,5 +42,17 @@ suite =
         , describe "The hash of all box ids"
             [ test "Hash from all" <|
                 \_ -> Expect.equal (Day2.hash <| List.map Tuple.first testSet) 12
+            ]
+        , describe "Part 2"
+            [ test "Corresponding box ids" <|
+                \_ -> Expect.equal (Day2.strDiffIndices "fghij" "fguij") [ 2 ]
+            , test "Non-corresponding box ids" <|
+                \_ -> Expect.equal (Day2.strDiffIndices "abcde" "axcye") [ 3, 1 ]
+            , test "Common letters between box ids" <|
+                \_ -> Expect.equal (Day2.commonLettersBetween "fghij" "fguij") "fgij"
+            , test "List of corresponding box ids" <|
+                \_ -> Expect.equal (Day2.getCorrespondingIds testStr) [ ( "fguij", "fghij", 2 ) ]
+            , test "List of intersections of corresponding box ids" <|
+                \_ -> Expect.equal (Day2.intersectionsOfBoxIds testStr) [ "fgij" ]
             ]
         ]

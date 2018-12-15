@@ -1,4 +1,4 @@
-module Day2 exposing (answer, hasMultiples, hash, part1, question)
+module Day2 exposing (answer1, commonLettersBetween, getCorrespondingIds, hasMultiples, hash, intersectionsOfBoxIds, part1, part2, question, strDiffIndices)
 
 
 type alias HasDoubles =
@@ -53,8 +53,8 @@ hash list =
     doubles * triples
 
 
-answer : String -> Int
-answer str =
+answer1 : String -> Int
+answer1 str =
     hash <| String.split "\n" str
 
 
@@ -313,4 +313,91 @@ question =
 
 
 part1 =
-    answer question
+    answer1 question
+
+
+strDiffIndices : String -> String -> List Int
+strDiffIndices str1 str2 =
+    List.map2 Tuple.pair (String.toList str1) (String.toList str2)
+        |> List.indexedMap Tuple.pair
+        |> List.foldl
+            (\( i, ( char1, char2 ) ) acc ->
+                if char1 == char2 then
+                    acc
+
+                else
+                    i :: acc
+            )
+            []
+
+
+commonLettersBetween : String -> String -> String
+commonLettersBetween str1 str2 =
+    let
+        diff =
+            strDiffIndices str1 str2
+    in
+    String.toList str1
+        |> List.indexedMap Tuple.pair
+        |> List.foldl
+            (\( i, char ) acc ->
+                if List.member i diff then
+                    acc
+
+                else
+                    acc ++ [ char ]
+            )
+            []
+        |> String.fromList
+
+
+getIdWithOneDiff : List String -> String -> Maybe ( String, String, Int )
+getIdWithOneDiff list str =
+    list
+        |> List.filterMap
+            (\x ->
+                case strDiffIndices x str of
+                    [ oneDiff ] ->
+                        Just ( x, str, oneDiff )
+
+                    _ ->
+                        Nothing
+            )
+        |> List.head
+
+
+keepIdsWithOneDiff : List String -> List ( String, String, Int )
+keepIdsWithOneDiff list =
+    let
+        singleDiffIds =
+            getIdWithOneDiff list
+    in
+    list
+        |> List.filterMap singleDiffIds
+        |> List.foldl
+            (\( a, b, diff ) acc ->
+                if List.member ( a, b, diff ) acc || List.member ( b, a, diff ) acc then
+                    acc
+
+                else
+                    ( a, b, diff ) :: acc
+            )
+            []
+
+
+getCorrespondingIds : String -> List ( String, String, Int )
+getCorrespondingIds str =
+    String.split "\n" str
+        |> List.map String.trim
+        |> keepIdsWithOneDiff
+
+
+intersectionsOfBoxIds : String -> List String
+intersectionsOfBoxIds str =
+    str
+        |> getCorrespondingIds
+        |> List.map (\( a, b, diff ) -> commonLettersBetween a b)
+
+
+part2 =
+    intersectionsOfBoxIds question
