@@ -2,7 +2,6 @@ module Tests.Day2 exposing (suite)
 
 import Day2
 import Expect
-import Fuzz exposing (string)
 import Test exposing (Test, describe, fuzz, test)
 
 
