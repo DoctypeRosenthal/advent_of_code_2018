@@ -9,10 +9,10 @@ type alias HasTriples =
     Bool
 
 
-occurance : Char -> List Char -> Int
-occurance needle haystack =
+occurrence : List Char -> Char -> Int
+occurrence haystack needle =
     haystack
-        |> List.filter (\x -> x == needle)
+        |> List.filter ((==) needle)
         |> List.length
 
 
@@ -23,7 +23,7 @@ contains count haystack =
             String.toList haystack
     in
     charList
-        |> List.any (\x -> occurance x charList == count)
+        |> List.any (\x -> count == occurrence charList x)
 
 
 hasMultiples : String -> ( HasDoubles, HasTriples )
@@ -42,7 +42,8 @@ hash : List String -> Int
 hash list =
     let
         countTrue =
-            List.filter (\x -> x) >> List.length
+            -- count all the Trues in List
+            List.filter identity >> List.length
 
         ( doubles, triples ) =
             list
@@ -396,7 +397,7 @@ intersectionsOfBoxIds : String -> List String
 intersectionsOfBoxIds str =
     str
         |> getCorrespondingIds
-        |> List.map (\( a, b, diff ) -> commonLettersBetween a b)
+        |> List.map (\( a, b, _ ) -> commonLettersBetween a b)
 
 
 part2 =

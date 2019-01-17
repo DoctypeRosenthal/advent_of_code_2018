@@ -1,9 +1,7 @@
 module Tests.Day3 exposing (suite)
 
 import Day3 exposing (claimId)
-import Expect
 import Set
-import Test exposing (Test, describe, fuzz, test)
 
 
 testClaims =

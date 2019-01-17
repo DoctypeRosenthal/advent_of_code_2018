@@ -80,11 +80,14 @@ type alias Point2D =
 claimToPoints : Claim -> Set Point2D
 claimToPoints claim =
     let
+        range coordinate dimension =
+            List.range coordinate (coordinate + dimension - 1)
+
         xRange =
-            List.range claim.x (claim.x + claim.width - 1)
+            range claim.x claim.width
 
         yRange =
-            List.range claim.y (claim.y + claim.height - 1)
+            range claim.y claim.height
     in
     yRange
         |> List.map (\y -> List.map (\x -> ( x, y )) xRange)
@@ -109,14 +112,14 @@ allIntersections claims =
             []
 
 
-nrIntersections : Claim -> List Claim -> Int
-nrIntersections claim others =
+nrIntersections : List Claim -> Claim -> Int
+nrIntersections claims claim =
     let
         intersect =
             claimsIntersect claim
     in
-    others
-        |> List.filter (\x -> x.id /= claim.id)
+    claims
+        |> List.filter (.id >> (/=) claim.id)
         |> List.map intersect
         |> List.filter (not << Set.isEmpty)
         |> List.length
@@ -125,7 +128,7 @@ nrIntersections claim others =
 findSeparate : List Claim -> Maybe Claim
 findSeparate list =
     list
-        |> List.filter (\x -> nrIntersections x list == 0)
+        |> List.filter (\x -> 0 == nrIntersections list x)
         |> List.head
 
 

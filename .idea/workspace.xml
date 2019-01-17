@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f50c9b-f3f2-47e7-a70d-ea38c9178dd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/elm/Untils.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elm/Day2.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/elm/Day2.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elm/Day3.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/elm/Day3.elm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elm/Tests/Day2.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/elm/Tests/Day2.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elm/Tests/Day3.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/elm/Tests/Day3.elm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,16 +21,37 @@
     <settings binDirPath="$PROJECT_DIR$/node_modules/.bin" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3393617">
+    <splitter split-orientation="horizontal" split-proportion="0.7338262">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day3.elm">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-18">
-                  <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+                <state relative-caret-position="84">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
                   <folding>
-                    <element signature="n#Tests.Day3#0" expanded="true" />
+                    <element signature="e#36#66#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day2.elm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/elm/Day3.elm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                  <folding>
+                    <element signature="e#3271#42310#0" />
                   </folding>
                 </state>
               </provider>
@@ -38,26 +60,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/.elm/0.19.0/package/elm/core/1.0.2/src/List.elm">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="213" selection-start-line="213" selection-end-line="213" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/.elm/0.19.0/package/elm/core/1.0.2/src/String.elm">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="209" selection-start-line="209" selection-end-line="209" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/elm/Day3.elm">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="482">
-                  <caret line="1521" column="5" selection-start-line="1521" selection-end-line="1521" selection-end-column="5" />
+                <state>
+                  <caret line="431" selection-start-line="431" selection-end-line="431" />
                 </state>
               </provider>
             </entry>
@@ -66,13 +70,22 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/elm/Day3.elm">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-81">
-                  <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                <state>
+                  <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/elm/Day2.elm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="236">
+                  <caret line="401" selection-start-line="401" selection-end-line="401" />
                   <folding>
-                    <element signature="e#0#113#0" expanded="true" />
+                    <element signature="e#1205#9967#0" />
                   </folding>
                 </state>
               </provider>
@@ -115,11 +128,11 @@
         <option value="$PROJECT_DIR$/src/elm/Day1.elm" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/elm/Day2.elm" />
-        <option value="$PROJECT_DIR$/src/elm/Tests/Day2.elm" />
         <option value="$PROJECT_DIR$/src/elm/Untils.elm" />
-        <option value="$PROJECT_DIR$/src/elm/Tests/Day3.elm" />
+        <option value="$PROJECT_DIR$/src/elm/Day2.elm" />
         <option value="$PROJECT_DIR$/src/elm/Day3.elm" />
+        <option value="$PROJECT_DIR$/src/elm/Tests/Day3.elm" />
+        <option value="$PROJECT_DIR$/src/elm/Tests/Day2.elm" />
       </list>
     </option>
   </component>
@@ -134,6 +147,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,7 +194,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,6 +234,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -312,7 +326,7 @@
     <frame x="0" y="-10" width="1920" height="1090" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13670212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13670212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -320,7 +334,7 @@
       <window_info id="Learn" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35796046" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35796046" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,36 +355,6 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13670212" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Learn" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42039543" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32882413" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Elm" order="4" />
-      <window_info anchor="right" id="Cargo" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -380,7 +364,8 @@
     <MESSAGE value="change function name" />
     <MESSAGE value="complete Day 2 successfully" />
     <MESSAGE value="begin Day2" />
-    <option name="LAST_COMMIT_MESSAGE" value="begin Day2" />
+    <MESSAGE value="successfully finish Day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="successfully finish Day 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/static/styles/main.scss" />
@@ -498,17 +483,6 @@
         <state relative-caret-position="-741" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elm/Day2.elm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1715">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="n#Day2#0" expanded="true" />
-            <element signature="e#1205#9967#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/elm/Untils.elm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -526,16 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day2.elm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="42" column="81" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="81" />
-          <folding>
-            <element signature="n#Tests.Day2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.elm/0.19.0/package/elm/core/1.0.2/src/String.elm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -543,27 +507,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.elm/0.19.0/package/elm/core/1.0.2/src/List.elm">
+    <entry file="file://$PROJECT_DIR$/src/elm/Day2.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        <state relative-caret-position="236">
+          <caret line="401" selection-start-line="401" selection-end-line="401" />
+          <folding>
+            <element signature="e#1205#9967#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day3.elm">
+    <entry file="file://$USER_HOME$/.elm/0.19.0/package/elm/core/1.0.2/src/List.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
-          <folding>
-            <element signature="n#Tests.Day3#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="431" selection-start-line="431" selection-end-line="431" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elm/Day3.elm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="1521" column="5" selection-start-line="1521" selection-end-line="1521" selection-end-column="5" />
+        <state relative-caret-position="504">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#3271#42310#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day3.elm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#36#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elm/Tests/Day2.elm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
